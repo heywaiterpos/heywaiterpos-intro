@@ -14,24 +14,18 @@
         }
 
         body.header-top {
-            padding-top: 180px;
+            /* padding-top: 180px; */
         }
 
-        .header {
+        .header .title {
             transition: all 0.3s ease;
         }
 
-        .header.shrink {
-            transform: scale(0.7);
-            position: fixed;
-            top: 0px;
-            background-color: rgb(243 244 246 / var(
-                    --tw-bg-opacity, 1));
-            width: 100%;
-            left: 0;
+        .header.shrink .title {
+            transform: scale(0.7) translateX(-80px);
         }
 
-        .header.shrink::after {
+        /* .header.shrink::after {
             content: '';
             display: block;
             background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
@@ -42,15 +36,15 @@
             top: 0;
             left: 0;
             z-index: -1;
-        }
+        } */
     </style>
 </head>
 
 <body class="bg-gray-100">
     <div class="container mx-auto px-4 py-8">
-        <div class="header sticky top-0 bg-gray-100 z-50 py-4">
+        <div class="header sticky top-0 bg-gray-100 z-50 py-4 px-8">
             <div class="flex flex-col lg:flex-row justify-between items-center">
-                <div class="text-center lg:text-left">
+                <div class="title text-center lg:text-left">
                     <h1 class="text-4xl font-bold text-gray-900">HEY WAITER</h1>
                     <h2 class="text-6xl font-bold text-gray-900">Point of Sales</h2>
                 </div>
@@ -60,7 +54,7 @@
                 </div>
             </div>
         </div>
-        <div class="mt-8 flex flex-col lg:flex-row">
+        <div class="mt-8 flex flex-col lg:flex-row px-8 py-8">
             <div class="lg:w-1/2">
                 <div class="mt-8">
                     <ul class="space-y-4">
