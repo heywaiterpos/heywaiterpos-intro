@@ -22,21 +22,8 @@
         }
 
         .header.shrink .title {
-            transform: scale(0.7) translateX(-80px);
+            transform: scale(0.7);
         }
-
-        /* .header.shrink::after {
-            content: '';
-            display: block;
-            background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
-            transform: scale(1.6);
-            height: 100%;
-            width: 100%;
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: -1;
-        } */
     </style>
 </head>
 
@@ -44,17 +31,31 @@
     <div class="container mx-auto px-4 py-8">
         <div class="header sticky top-0 bg-gray-100 z-50 py-4 px-8">
             <div class="flex flex-col lg:flex-row justify-between items-center">
-                <div class="title text-center lg:text-left">
+                <div class="title text-center lg:text-left lg:ml-0 ml-0">
                     <h1 class="text-4xl font-bold text-gray-900">HEY WAITER</h1>
                     <h2 class="text-6xl font-bold text-gray-900">Point of Sales</h2>
                 </div>
-                <div class="flex space-x-4 mt-4 lg:mt-0">
+                <div class="flex flex-col sm:flex-row gap-2 lg:mt-0 mt-8">
                     <a class="text-lg text-gray-700 hover:text-gray-900" href="/privacy-policy">Privacy Policy</a>
                     <a class="text-lg text-gray-700 hover:text-gray-900" href="/terms-of-service">Terms of Service</a>
                 </div>
             </div>
         </div>
-        <div class="mt-8 flex flex-col lg:flex-row px-8 py-8">
+        <div class="flex flex-col py-4 px-8">
+            <div class="mt-8 flex flex-col sm:flex-row justify-center gap-4">
+                <a class="bg-blue-500 text-white px-6 py-3 rounded-lg shadow-md text-lg hover:bg-blue-600"
+                href="sale.hewaiter">
+                Get Started
+                </a>
+                <a class="bg-red-500 text-white px-6 py-3 rounded-lg shadow-md text-lg hover:bg-red-600"
+                href="/login-with-google">
+                <i class="fab fa-google mr-2">
+                </i>
+                Login with Google
+                </a>
+            </div>
+        </div>
+        <div class="flex flex-col lg:flex-row px-8 py-8">
             <div class="lg:w-1/2">
                 <div class="mt-8">
                     <ul class="space-y-4">
