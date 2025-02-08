@@ -2,4 +2,6 @@
 |-- banner.png
 |-- index.html
 |-- LICENSE
+|-- privacy-policy.html
 |-- README.md
+|-- terms-of-service.html

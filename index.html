@@ -1,108 +1,162 @@
 <html>
- <head>
-  <title>
-    HEY WAITER POS
-  </title>
-  <script src="https://cdn.tailwindcss.com">
-  </script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;display=swap" rel="stylesheet"/>
-  <style>
-   body {
+
+<head>
+    <title>
+        HEY WAITER POS
+    </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+    <style>
+        body {
             font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
         }
-  </style>
- </head>
- <body class="bg-gray-100">
-  <div class="container mx-auto px-4 py-8 flex flex-col lg:flex-row">
-   <div class="lg:w-1/2">
-    <div class="text-left">
-     <h1 class="text-4xl font-bold text-gray-900">
-      HEY WAITER
-     </h1>
-     <h2 class="text-6xl font-bold text-gray-900">
-      Point of Sales
-     </h2>
+
+        body.header-top {
+            padding-top: 180px;
+        }
+
+        .header {
+            transition: all 0.3s ease;
+        }
+
+        .header.shrink {
+            transform: scale(0.7);
+            position: fixed;
+            top: 0px;
+            background-color: rgb(243 244 246 / var(
+                    --tw-bg-opacity, 1));
+            width: 100%;
+            left: 0;
+        }
+
+        .header.shrink::after {
+            content: '';
+            display: block;
+            background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
+            transform: scale(1.6);
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+    <div class="container mx-auto px-4 py-8">
+        <div class="header sticky top-0 bg-gray-100 z-50 py-4">
+            <div class="flex flex-col lg:flex-row justify-between items-center">
+                <div class="text-center lg:text-left">
+                    <h1 class="text-4xl font-bold text-gray-900">HEY WAITER</h1>
+                    <h2 class="text-6xl font-bold text-gray-900">Point of Sales</h2>
+                </div>
+                <div class="flex space-x-4 mt-4 lg:mt-0">
+                    <a class="text-lg text-gray-700 hover:text-gray-900" href="/privacy-policy">Privacy Policy</a>
+                    <a class="text-lg text-gray-700 hover:text-gray-900" href="/terms-of-service">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+        <div class="mt-8 flex flex-col lg:flex-row">
+            <div class="lg:w-1/2">
+                <div class="mt-8">
+                    <ul class="space-y-4">
+                        <li class="flex items-center bg-white p-4 rounded-lg shadow-md">
+                            <i class="fas fa-sync-alt text-gray-500 mr-4">
+                            </i>
+                            <span class="text-lg text-gray-700">
+                                Seamless Integration Across Devices
+                            </span>
+                        </li>
+                        <li class="flex items-center bg-white p-4 rounded-lg shadow-md">
+                            <i class="fas fa-utensils text-gray-500 mr-4">
+                            </i>
+                            <span class="text-lg text-gray-700">
+                                Built for Modern Restaurants and Retail
+                            </span>
+                        </li>
+                        <li class="flex items-center bg-white p-4 rounded-lg shadow-md">
+                            <i class="fas fa-palette text-gray-500 mr-4">
+                            </i>
+                            <span class="text-lg text-gray-700">
+                                Consistent Branding and Design
+                            </span>
+                        </li>
+                        <li class="flex items-center bg-white p-4 rounded-lg shadow-md">
+                            <i class="fas fa-chart-bar text-gray-500 mr-4">
+                            </i>
+                            <span class="text-lg text-gray-700">
+                                Data-Driven Insights & Real-Time Updates
+                            </span>
+                        </li>
+                        <li class="flex items-center bg-white p-4 rounded-lg shadow-md">
+                            <i class="fas fa-tv text-gray-500 mr-4">
+                            </i>
+                            <span class="text-lg text-gray-700">
+                                Interactive Demo for Rapid Onboarding
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mt-8 text-left text-gray-500">
+                    <p>
+                        Created by Hey Waiter POS Team
+                    </p>
+                    <div class="flex flex-col space-y-2 mt-2">
+                        <a class="hover:text-gray-700" href="https://www.heywaiterpos.com">
+                            <i class="fas fa-globe">
+                            </i>
+                            www.heywaiterpos.com
+                        </a>
+                        <a class="hover:text-gray-700" href="https://instagram.com/heywaiterpos">
+                            <i class="fab fa-instagram">
+                            </i>
+                            instagram.com/heywaiterpos
+                        </a>
+                        <a class="hover:text-gray-700" href="https://facebook.com/heywaiterpos">
+                            <i class="fab fa-facebook">
+                            </i>
+                            facebook.com/heywaiterpos
+                        </a>
+                        <a class="hover:text-gray-700" href="https://twitter.com/heywaiterpos">
+                            <i class="fab fa-twitter">
+                            </i>
+                            twitter.com/heywaiterpos
+                        </a>
+                        <a class="hover:text-gray-700" href="https://dribbble.com/heywaiterpos">
+                            <i class="fab fa-dribbble">
+                            </i>
+                            dribbble.com/heywaiterpos
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:w-1/2 flex justify-center lg:justify-end mt-8 lg:mt-0">
+                <div class="relative">
+                    <img style="    width: 100%;
+                    scale: 1.2;
+                    transform: translateX(39px);"
+                        alt="iPad displaying a Point of Sales UI with various statistics and ordered items"
+                        class="w-full lg:w-3/4" height="400" src="./banner.png" width="600" />
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="mt-8">
-     <ul class="space-y-4">
-      <li class="flex items-center bg-white p-4 rounded-lg shadow-md">
-       <i class="fas fa-sync-alt text-gray-500 mr-4">
-       </i>
-       <span class="text-lg text-gray-700">
-        Adaptable for Any Device
-       </span>
-      </li>
-      <li class="flex items-center bg-white p-4 rounded-lg shadow-md">
-       <i class="fas fa-utensils text-gray-500 mr-4">
-       </i>
-       <span class="text-lg text-gray-700">
-        Built for Modern Restaurants and Retail
-       </span>
-      </li>
-      <li class="flex items-center bg-white p-4 rounded-lg shadow-md">
-       <i class="fas fa-palette text-gray-500 mr-4">
-       </i>
-       <span class="text-lg text-gray-700">
-        Consistent Branding and Design
-       </span>
-      </li>
-      <li class="flex items-center bg-white p-4 rounded-lg shadow-md">
-       <i class="fas fa-chart-bar text-gray-500 mr-4">
-       </i>
-       <span class="text-lg text-gray-700">
-        Data-Driven Insights & Real-Time Updates
-       </span>
-      </li>
-      <li class="flex items-center bg-white p-4 rounded-lg shadow-md">
-       <i class="fas fa-tv text-gray-500 mr-4">
-       </i>
-       <span class="text-lg text-gray-700">
-        Interactive Demo for Rapid Onboarding
-       </span>
-      </li>
-     </ul>
-    </div>
-    <div class="mt-8 text-left text-gray-500">
-     <p>
-      Created by Hey Waiter POS Team
-     </p>
-     <div class="flex flex-col space-y-2 mt-2">
-      <a class="hover:text-gray-700" href="https://www.heywaiterpos.com">
-       <i class="fas fa-globe">
-       </i>
-       www.heywaiterpos.com
-      </a>
-      <a class="hover:text-gray-700" href="https://instagram.com/heywaiterpos">
-       <i class="fab fa-instagram">
-       </i>
-       instagram.com/heywaiterpos
-      </a>
-      <a class="hover:text-gray-700" href="https://facebook.com/heywaiterpos">
-       <i class="fab fa-facebook">
-       </i>
-       facebook.com/heywaiterpos
-      </a>
-      <a class="hover:text-gray-700" href="https://twitter.com/heywaiterpos">
-       <i class="fab fa-twitter">
-       </i>
-       twitter.com/heywaiterpos
-      </a>
-      <a class="hover:text-gray-700" href="https://dribbble.com/heywaiterpos">
-       <i class="fab fa-dribbble">
-       </i>
-       dribbble.com/heywaiterpos
-      </a>
-     </div>
-    </div>
-   </div>
-   <div class="lg:w-1/2 flex justify-center lg:justify-end mt-8 lg:mt-0">
-    <div class="relative">
-     <img style="    width: 100%;
-     scale: 1.2;
-     transform: translateX(39px);" alt="iPad displaying a Point of Sales UI with various statistics and ordered items" class="w-full lg:w-3/4" height="400" src="./banner.png" width="600"/>
-    </div>
-   </div>
-  </div>
- </body>
+</body>
+<script>
+    window.addEventListener('scroll', function () {
+        const header = document.querySelector('.header');
+        if (window.scrollY > 50) {
+            header.classList.add('shrink');
+            document.body.classList.add('header-top')
+        } else {
+            header.classList.remove('shrink');
+            document.body.classList.remove('header-top')
+        }
+    });
+</script>
+
 </html>
