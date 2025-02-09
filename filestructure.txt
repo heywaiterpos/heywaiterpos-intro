@@ -1,8 +1,10 @@
 |-- .gitignore
 |-- banner.png
+|-- favicon.ico
 |-- index.html
 |-- LICENSE
 |-- privacy-policy.html
 |-- README.md
+|-- sitemap.xml
 |-- terms-of-service.html
 |-- vercel.json
